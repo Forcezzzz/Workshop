@@ -27,7 +27,7 @@ app.get('/download',(req, res)=>{
     res.send('<h1>You are about to open download web page</h1>')
 })
 
-app.listen('3000', ()=>{
+app.listen('3000', ()=>{  //เปลี่ยนเลขพอร์ตได้จาก 3000 เป็นอื่นๆ
     console.log('server started ... ')
 })
 
@@ -42,4 +42,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
+
 })*/
