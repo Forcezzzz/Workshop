@@ -1,0 +1,145 @@
+//******ภาษานี้ไม่ได้ fix type************
+/*data = 100
+console.log(typeof data)
+data = 'KU'
+console.log(typeof data)
+data=true
+console.log(typeof data)*/
+
+//*********Loop***********
+/*for(let i = 1;i <=5;i++){
+    console.log("For loop Value is ",i)
+}
+let x=10
+while (x<=15){
+    console.log("While loop ",x)
+    x++
+}*/
+
+//*******if-else simple************
+/*let age = 20
+if(age > 25){
+    console.log("You are eligible")
+} else {
+    console.log("You ")
+}*/
+
+//*********if-else complicated ซับซ้อนขึ้น********
+/*let cgpa = 9
+if(cgpa < 4){
+    console.log("Fail")
+} else if (cgpa >=4 && cgpa <=6){
+
+} else if (){
+
+}*/
+
+//************switch case***************
+/*let Day =3 
+switch (Day){
+    case 1:
+        console.log("Monday")
+        break
+    case 2:
+        console.log("Tuesday")
+        break
+    case 3:
+        console.log("Wednesday")
+        break
+}*/
+
+//*************sum of array******************
+/*let myArray = [10,20,30,40,50]
+let sum = 0
+for(let i=0;i<myArray.length;i++){
+    sum += myArray[i]
+}
+console.log("The summary is ",sum)*/
+
+//*************filter by function*******************
+/*let myArray = [18,12,14,9,100,32,41]
+console.log(myArray)
+let myNewArray = myArray.filter(function(V){
+    if (V > 20) return true
+})
+console.log(myNewArray)*/
+
+//*************************Task filter even number***********************
+/*let myArray = [18,12,14,9,100,32,41]
+console.log(myArray)
+let myNewArray = myArray.filter(function(V){
+    if (V % 2 == 0) return true
+})
+console.log(myNewArray)*/
+
+//***************************Filter by startswith***************************
+/*let myArray = ['India','Thailand','China','Russia','Pakistan','Canada']
+console.log(myArray)
+let myNewArray = myArray.filter(function(V){
+    if (V.startsWith('C')) return true
+})
+console.log("The country that start with letter 'C' ",myNewArray)*/
+
+//*****************************Task filter country startswith vowel *********************
+/*let myArray = ['India','Thailand','China','Russia','Pakistan','Canada']
+console.log(myArray)
+let myNewArray = myArray.filter(function(V){
+    if (V.startsWith('A')|| V.startsWith('E') || V.startsWith('I') ||  V.startsWith('O') ||  V.startsWith('U'))return true
+})
+console.log("The country that start with vowel ",myNewArray)*/
+
+
+/*let myArray = [
+    {ename:'John',age:20,salary:5000,email:'abc@gmial.com',country:'india'},
+    {ename:'Sam',age:19,salary:7000,email:'xyz@gmial.com',country:'india'},
+    {ename:'Mic',age:21,salary:8000,email:'rec@gmial.com',country:'Thailand'},
+    {ename:'Peter',age:30,salary:10000,email:'hdd@gmial.com',country:'China'}
+]
+myArray.map(function(V){
+    if(V.age > 21) V.salary += 1000 
+})
+console.log(myArray)*/
+
+//*******************Task if rating > 3 then salary + 10% ***************************
+/*let myArray = [
+    {ename:'John',age:20,salary:5000,email:'abc@gmial.com',country:'india',rating:2},
+    {ename:'Sam',age:19,salary:7000,email:'xyz@gmial.com',country:'india',rating:3},
+    {ename:'Mic',age:21,salary:8000,email:'rec@gmial.com',country:'Thailand',rating:4},
+    {ename:'Peter',age:30,salary:10000,email:'hdd@gmial.com',country:'China',rating:5}
+]
+myArray.map(function(V){
+    if(V.rating > 3 ) V.salary += (V.salary*(0.1))
+})
+console.log(myArray)*/
+
+//********************* find index *****************************************
+/*let data = [22,51,71,24,88,64,24,31]
+let index = data.findIndex(function(v,index){
+    if (v == 88) return true
+})
+console.log("the Value 88 is found at index : ",index) // -1 = not found*/
+
+
+/*let data = [22,51,71]
+let [x,y,z] = data
+console.log('value of x is ',x)
+console.log('value of y is ',y)
+console.log('value of z is ',z)*/
+
+
+/*let employee = {
+    name:'manoj',
+    age:25
+}
+let emp_age = employee.age
+let emp_name = employee.name
+console.log(emp_age,'\t',emp_name)
+let {name,age} = employee
+console.log(name,'\t',age)*/
+
+//***********************combine 2 array **************************
+let firstArray = [22,51,71]
+let secondArray =[1,2,3]
+
+let thirdArray = [...firstArray,...secondArray]
+console.log(thirdArray)
